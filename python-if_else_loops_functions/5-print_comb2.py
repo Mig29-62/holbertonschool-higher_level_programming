@@ -5,7 +5,8 @@ string=''
 while i < 10:
         j = 0
         while j < 10:
-            print(f"{i}{j}",end=', ')
+            str="{}{}".format(i,j)
+            print(str)
             j +=  1
         i += 1
 print('\n')
