@@ -6,7 +6,7 @@ while i < 10:
         j = 0
         while j < 10:
             str="{}{}".format(i,j)
-            print(str)
+            print(str,end=', ')
             j +=  1
         i += 1
 print('\n')
