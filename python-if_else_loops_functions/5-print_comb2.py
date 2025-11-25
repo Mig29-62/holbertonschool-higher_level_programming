@@ -2,11 +2,6 @@
 i = 0
 j = 0
 string=''
-while i < 10:
-        j = 0
-        while j < 10:
-            str="{}{}".format(i,j)
-            print(str,end=', ')
-            j +=  1
-        i += 1
+for n in range(0,100):
+    print(f"{n:02}",end=', ')
 print('\n')
