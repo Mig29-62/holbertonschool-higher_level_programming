@@ -4,4 +4,4 @@ str=''
 while i < 123:
     str=str+chr(i)+''
     i=i+1
-print("{}".format(str))
+print("{}".format(str),end='')
