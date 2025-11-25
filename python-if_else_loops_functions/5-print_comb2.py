@@ -5,6 +5,6 @@ string=''
 for n in range(0,99):
     i=n//10
     j=n%10
-    str="{}{}".format(i,j)
-    print(str,end=', ')
+    str="{}{},".format(i,j)
+    print(str,end=' ')
 print('99\n')
