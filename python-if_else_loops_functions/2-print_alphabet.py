@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 i=97
+str=''
 while i < 123:
-    str=chr(i)+''
+    str=str+chr(i)+''
     i=i+1
-    print(str,end='')
+print(str,end='')
