@@ -1,7 +1,4 @@
-from operator import truediv
-from selectors import SelectSelector
-
-
+#!/usr/bin/python3
 def islower(c):
     c=ord(c)
     if c >= 97 & c <= 122 :
