@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-def islower(str):
-    string2=''
-    length=len(str)
-    for i in range(0,len):
-        c=ord(str[i])
-        c=c-32
-        string2=string2+chr(c)
-    print(string2)
+def islower(c):
+    c = ord(c)
+    if c >= 97 and c <= 122 :
+        return True
+    else:
+        return False
