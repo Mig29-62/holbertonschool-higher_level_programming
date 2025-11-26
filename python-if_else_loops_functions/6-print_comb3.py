@@ -12,4 +12,4 @@ for n in range(0, 89):
         continue
     else:
         continue
-print('89', end='\n')  #noqa: W292
+print('89', end='\n')
