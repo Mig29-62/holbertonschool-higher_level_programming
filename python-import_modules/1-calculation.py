@@ -16,4 +16,3 @@ string = "{} / {} = {}".format(a, b, f)
 print(string)
 if __name__ == "__main__":
     pass
-
