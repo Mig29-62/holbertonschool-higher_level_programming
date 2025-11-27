@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 import add_0
 from add_0 import add
+if __name__ == "__main__":
+	pass
+
 a = 1
 b = 2
 c = add(a,b)
