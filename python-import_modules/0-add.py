@@ -6,5 +6,5 @@ if __name__ == "__main__":
 a = 1
 b = 2
 c = add(a, b)
-string = "{} + {} = {}".format(a, b , c)
+string = "{} + {} = {}".format(a, b, c)
 print(string)
