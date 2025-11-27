@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from calculator_1 import add , sub ,mul, div
+from calculator_1 import add, sub, mul, div
 a = 10
 b = 5
 c = add(a, b)
@@ -14,5 +14,6 @@ string = "{} * {} = {}".format(a, b, e)
 print(string)
 string = "{} / {} = {}".format(a, b, f)
 print(string)
-if  __name__ == "__main__":
+if __name__ == "__main__":
     pass
+
