@@ -14,5 +14,5 @@ string="{} * {} = {}".format(a,b,e)
 print(string)
 string="{} / {} = {}".format(a,b,f)
 print(string)
-if  __init__="__name__"
+if  __name__="__main__"
     pass
