@@ -11,5 +11,5 @@ for i in range(1, length):
     b = sys.argv[i]
     str = "{}: {}".format(i, b)
     print(str)
-if __name__ = "__main__":
+if __name__ == "__main__":
     pass
