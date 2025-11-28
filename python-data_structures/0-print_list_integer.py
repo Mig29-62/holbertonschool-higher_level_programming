@@ -2,6 +2,6 @@
 def print_list_integer(mylist=[]):
     length=len(mylist)
     for i in range(0,length):
-        string="{}".format(i)
+        string="{:d}".format(i)
         print(string,end='\n')
 
