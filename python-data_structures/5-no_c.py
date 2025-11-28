@@ -7,3 +7,4 @@ def no_c(my_string):
             return new_string
         if ord(my_string[i]) == 67:
             new_string = my_string[:i] + my_string[i + 1:]
+            return new_string
