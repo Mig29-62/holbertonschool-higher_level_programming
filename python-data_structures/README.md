@@ -1,0 +1,1 @@
+1.in this task we use print function with format string to output list integers one by one
