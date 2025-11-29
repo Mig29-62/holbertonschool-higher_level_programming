@@ -12,3 +12,4 @@ def print_matrix_integer(a=[[]]):
                 j += 1
             print("\n")
             i += 1
+            j = 0
