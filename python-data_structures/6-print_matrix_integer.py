@@ -3,6 +3,7 @@ def print_matrix_integer(a=[[]]):
     row=len(a)
     column=len(a[0])
     j=0
+    i=0
     string=''
     if row == 0 and column == 0:
         print(' ')
