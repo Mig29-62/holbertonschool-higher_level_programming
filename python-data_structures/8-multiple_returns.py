@@ -3,7 +3,7 @@ def multiple_returns(sentence):
     length = len(sentence)
     my_list = []
     my_list.append(length)
-    if sentence[0] in sentence:
+    if sentence:
         my_list.append(sentence[0])
     else:
         my_list.append(None)
