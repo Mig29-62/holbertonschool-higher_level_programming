@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
     length = len(sentence)
-    return length
-    return sentence[0]
+    my_list = []
+    my_list.append(length)
+    my_list.append(sentence[0])
+    return my_list
