@@ -4,8 +4,8 @@ def add_tuple(tuple_a=(), tuple_b=()):
     list_c=[x+y for x,y in zip(tuple_a, tuple_b)]
     if len(tuple_b) == 1 and  len(tuple_a) == 1:
         c=tuple_a[0]+tuple_b[0]
-        list_c.append(c)
-        list_c.append(0)
+        list_c[0]=c
+        list_c[1]=0
     elif len(tuple_a) == 1:
         list_c.append(tuple_b[1])
     elif len(tuple_b) == 1:
