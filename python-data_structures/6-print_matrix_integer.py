@@ -6,12 +6,14 @@ def print_matrix_integer(a=[[]]):
     j=0
     string=''
     while i<=row:
-            while j<=column:
+            while j<column:
                 string="{:d}".format(a[i][j])
                 if j == column-1:
                     print(string)
                 else:
                     print(string,end=' ')
                 j +=1
+                print(i)
+                print(j)
             i += 1
             j = 0
