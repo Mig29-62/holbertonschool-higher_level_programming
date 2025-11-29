@@ -12,4 +12,4 @@ def max_integer(my_list=[]):
                 max=my_list[j]
             j=j+1
         i=i+1
-    return my_list[length-1]
+    return max
