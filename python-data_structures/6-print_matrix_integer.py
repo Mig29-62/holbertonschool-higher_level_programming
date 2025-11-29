@@ -2,9 +2,10 @@
 def print_matrix_integer(a=[[]]):
     row=len(a)
     column=len(a[0])
-    i=0
     j=0
     string=''
+    if row == 0 and column == 0:
+        print(' ')
     while i<row:
             while j<column:
                 string="{:d}".format(a[i][j])
@@ -15,3 +16,4 @@ def print_matrix_integer(a=[[]]):
                 j +=1
             i += 1
             j = 0
+
