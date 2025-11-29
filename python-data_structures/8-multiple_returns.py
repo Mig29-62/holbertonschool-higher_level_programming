@@ -3,5 +3,8 @@ def multiple_returns(sentence):
     length = len(sentence)
     my_list = []
     my_list.append(length)
-    my_list.append(sentence[0])
+    if sentence[0] in sentence:
+        my_list.append(sentence[0])
+    else:
+        my_list.append(None)
     return my_list
