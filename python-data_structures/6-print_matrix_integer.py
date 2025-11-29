@@ -5,7 +5,7 @@ def print_matrix_integer(a=[[]]):
     j=0
     i=0
     string=''
-    if row == 0 and column == 0:
+    if  a == [[]]:
         print(' ')
     while i<row:
             while j<column:
