@@ -1,5 +1,13 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    new_matrix = [s.replace(search, replace) for s in my_list]
+    length = len(my_list)
+    new_matrix = list(my_list)
+    for element in new_matrix:
+        if element == search:
+            search_index = my_list.index(search)
+            new_matrix[search_index] = replace
+            continue
+        else:
+            continue
     return new_matrix
 
