@@ -7,7 +7,7 @@ def print_matrix_integer(matrix=[[]]):
     string=''
     while i<row:
             while j<column:
-                string=a[i][j]+'' 
+                string="{}".format(a[i][j])
                 print(string,end=' ')
                 j += 1
             print("\n")
