@@ -14,7 +14,7 @@ def print_matrix_integer(a=[[]]):
                     print(string,end=' ')
                 j += 1
             if i == row-1:
-               pass
+               print('')
             else:
                print('\n')
             i += 1
