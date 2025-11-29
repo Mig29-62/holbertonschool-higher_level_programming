@@ -5,10 +5,10 @@ def print_matrix_integer(a=[[]]):
     j = 0
     i = 0
     string = ''
-    if  a == [[]]:
+    if a == [[]]:
         print()
-    while i<row:
-        while j<column:
+    while i < row:
+        while j < column:
             string = "{:d}".format(a[i][j])
             if j == column-1:
                 print(string)
