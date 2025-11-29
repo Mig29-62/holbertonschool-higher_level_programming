@@ -6,7 +6,7 @@ def print_matrix_integer(a=[[]]):
     i=0
     string=''
     if  a == [[]]:
-        print(' ')
+        print()
     while i<row:
             while j<column:
                 string="{:d}".format(a[i][j])
