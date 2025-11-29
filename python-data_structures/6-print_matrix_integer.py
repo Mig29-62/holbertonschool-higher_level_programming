@@ -9,13 +9,9 @@ def print_matrix_integer(a=[[]]):
             while j<column:
                 string="{:d}".format(a[i][j])
                 if j == column-1:
-                    break
+                    print(string)
                 else:
                     print(string,end=' ')
-                j += 1
-            if i == row-1:
-               pass
-            else:
-               print('\n')
+                j +=1
             i += 1
             j = 0
