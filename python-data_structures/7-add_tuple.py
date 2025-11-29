@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-    tuple_c=()
+    list_c=[]
     for i in range(0,2):
-        tuple_c[i]=tuple_a[i]+tuple_b[i]
+        c=tuple_a[i]+tuple_b[i]
+        list_c.append(c)
+    tuple_c=tuple(list_c)
     return tuple_c
