@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 def print_matrix_integer(a=[[]]):
     row=len(a)
-    column=len(a)
+    column=len(a[0])
     i=0
     j=0
     string=''
-    while i<=row:
+    while i<row:
             while j<column:
                 string="{:d}".format(a[i][j])
                 if j == column-1:
