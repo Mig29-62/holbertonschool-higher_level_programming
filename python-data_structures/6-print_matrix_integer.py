@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def print_matrix_integer(a=[[]]):
-    row=len(matrix)
-    column=len(matrix[0])
+    row=len(a)
+    column=len(a)
     i=0
     j=0
     string=''
