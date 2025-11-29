@@ -12,6 +12,10 @@ def add_tuple(tuple_a=(), tuple_b=()):
     if len(tuple_a) == 0:
         list_c.append(tuple_b[0])
         list_c.append(tuple_b[1])
+    if len(tuple_b) == 1 and  len(tuple_a) == 1:
+        c=tuple_a[0]+tuple_b[0]
+        list_c.append(c)
+        list_c.append(0)
     list_c=list_c[:2]
     tuple_c=tuple(list_c)
     return tuple_c
