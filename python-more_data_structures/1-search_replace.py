@@ -7,6 +7,5 @@ def search_replace(my_list, search, replace):
             search_index = my_list.index(search)
             new_matrix[search_index] = replace
             return new_matrix
-        else:
-            return new_matrix
+    return new_matrix
 
