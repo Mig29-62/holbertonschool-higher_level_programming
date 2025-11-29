@@ -13,7 +13,5 @@ def print_matrix_integer(a=[[]]):
                 else:
                     print(string,end=' ')
                 j +=1
-                print(i)
-                print(j)
             i += 1
             j = 0
