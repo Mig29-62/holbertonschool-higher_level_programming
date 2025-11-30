@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
-    l1=list(sorted(a_dictionary.items()))
-    for element in l1:
-        print(element, end='\n')
+    l1=list(sorted(a_dictionary.keys()))
+    l2=list(sorted(a_dictionary.values()))
+    for key in l1:
+        for value in l2:
+            string='{}:{}'.format(key,value)
+            print(string,end='\n')
+
+
