@@ -4,3 +4,5 @@ def uniq_add(my_list=[]):
     for element in my_list:
         if element in my_list and not new_list:
             addition += element
+        else:
+            continue
