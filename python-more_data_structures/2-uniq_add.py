@@ -1,11 +1,8 @@
 #!/usr/bin/python3
 def uniq_add(my_list=[]):
-    new_list=list(set(my_list))
-    addition=0
+    new_list=[0 for i in range(len(my_list))]
     for element in my_list:
-        count=my_list.count(element)
-        if count == 1:
+        if element not in new_list:
+            new_list.append(element)
             addition=addition+element
-        else:
-            continue
     return addition
