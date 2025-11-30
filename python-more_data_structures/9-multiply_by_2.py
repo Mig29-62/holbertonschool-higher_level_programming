@@ -2,5 +2,6 @@
 def multiply_by_2(a_dictionary):
     new_dictionary = dict()
     for key in a_dictionary:
-        new_dictionary[key] = int(a_dictionary[key]) * 2
+        value = a_dictionary[key] * 2
+        new_dictionary[key] = value
     return new_dictionary
