@@ -5,7 +5,7 @@ def print_sorted_dictionary(a_dictionary):
     for key in l1:
         for value in l2:
             if a_dictionary[key] == value:
-                string='{}:{}'.format(key,value)
+                string='{}:{} '.format(key,value)
                 print(string,end='\n')
             else:
                 continue
