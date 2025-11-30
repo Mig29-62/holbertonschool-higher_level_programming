@@ -7,3 +7,4 @@ def uniq_add(my_list=[]):
             addition += element
         else:
             continue
+    return addition
