@@ -7,9 +7,7 @@ def roman_to_int(roman_string):
         if len(roman_string) == 1:
             addition += roman_dict[letter]
             return addition
-        elif not roman_string[pos+1]:
-            return addition
-        elif roman_string[pos+1] > roman_string[pos]:
+        elif roman_string[pos+1] > roman_string[pos] and pos < len(roman_string)-1:
                 addition -= roman_dict[letter]
         else:
             addition += roman_dict[letter]
