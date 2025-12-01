@@ -5,5 +5,5 @@ def best_score(a_dictionary):
     for key in a_dictionary:
         if a_dictionary[key] > maximum:
             maximum = a_dictionary[key]
-            element_storage = element
+            element_storage = key
     return a_dictionary[element_storage]
