@@ -4,10 +4,10 @@ def roman_to_int(roman_string):
     addition=0
     for letter in roman_string:
         pos=roman_string.find(letter)
-        if roman_string[pos+1] > roman_string[pos]:
-            addition -= roman_dict[letter]
-        elif len(roman_string) == 1:
+        if len(roman_string) == 1:
             addition += roman_dict[letter]
+        elif roman_string[pos+1] > roman_string[pos]:
+            addition -= roman_dict[letter]
         else:
             addition += roman_dict[letter]
     return addition
