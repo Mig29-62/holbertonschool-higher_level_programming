@@ -6,6 +6,7 @@ def roman_to_int(roman_string):
         pos=roman_string.find(letter)
         if len(roman_string) == 1:
             addition += roman_dict[letter]
+            return addition
         elif roman_string[pos+1] > roman_string[pos]:
             addition -= roman_dict[letter]
         else:
