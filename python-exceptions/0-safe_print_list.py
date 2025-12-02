@@ -11,7 +11,7 @@ def safe_print_list(my_list=[], x=0):
         print('\n',end='')
         return x
     except IndexError:
-        if my_list[i]:
+        if i < addition:
             while my_list[i]:
                 print(my_list[i],end='')
                 i += 1
