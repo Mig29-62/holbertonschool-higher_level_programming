@@ -5,7 +5,7 @@ def roman_to_int(roman_string):
     roman_dict['D'] = 1000
     addition = 0
     prev = 0
-    if not type(roman_string) == str:
+    if roman_string is not str:
         return 0
     for element in reversed(roman_string):
         if roman_dict[element] < prev:
@@ -14,5 +14,5 @@ def roman_to_int(roman_string):
             addition += roman_dict[element]
         else:
             addition += roman_dict[element]
-        prev=roman_dict[element]
+        prev = roman_dict[element]
     return addition
