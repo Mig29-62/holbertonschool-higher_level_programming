@@ -8,12 +8,8 @@ def safe_print_list_integers(my_list=[], x=0):
             pass
     for i in range(0,x):
         try:
-            print("{:d}".format(element),end='')
-        except TypeError:
-            pass
-        except ValueError:
-            pass
+            print("{:d}".format(my_list[i]),end='')
         except IndexError:
-            pass
+            break
     print('\n',end='')
     return addition
