@@ -12,12 +12,12 @@ def safe_print_list_integers(my_list=[], x=0):
             if not isinstance(element,int):
                 pass
             else:
-                print("{:d}".format(my_list[i]))
+                print("{:d}".format(my_list[i]),end='')
             i += 1
     except IndexError:
         if i < addition-1:
             while i < addition:
-                print("{:d}".format(my_list[i]))
+                print("{:d}".format(my_list[i]),end='')
                 i += 1
         else:
             return addition
