@@ -6,5 +6,5 @@ def safe_print_division(a, b):
     except:
         pass
     finally:
-        print("{:.2f}".format(c))
+        print("{:.1f}".format(c))
         return c
