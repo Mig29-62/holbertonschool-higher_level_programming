@@ -3,31 +3,18 @@ def safe_print_list_integers(my_list=[], x=0):
     addition = 0
     i = 0
     for element in my_list:
-        if not isinstance(element,int):
-            pass
-        else:
+        if  isinstance(addition,int):
             addition += 1
-    try:
-        while i < x:
-            if not isinstance(element,int):
-                pass
-            else:
-                print("{:d}".format(my_list[i]),end='')
-            i += 1
-    except IndexError:
-        if i < addition-1:
-            while i < addition:
-                print("{:d}".format(my_list[i]),end='')
-                i += 1
         else:
-            print('\n', end='')
-            return addition
-    except TypeError:
-        if i < addition-1:
-            while i < addition:
-                print("{:d}".format(my_list[i]),end='')
-                i += 1
-        else:
-            return addition
-        print('\n',end='')
+            pass
+    for element in my_list:
+        try:
+            print("{:d}".format(element),end='')
+        except TypeError:
+            pass
+        except ValueError:
+            pass
+        except IndexError:
+            pass
+    print('\n',end='')
     return addition
