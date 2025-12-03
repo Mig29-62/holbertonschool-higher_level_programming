@@ -2,7 +2,7 @@
 def safe_print_division(a, b):
     try:
         print("Inside result: ",end='')
-    except:
+    except TypeError:
         pass
     finally:
         print("{:.1f}".format(a/b))
