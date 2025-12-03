@@ -12,4 +12,9 @@ def safe_print_list_integers(my_list=[], x=0):
         except IndexError:
             break
     print('\n',end='')
-    return addition
+    if x < addition:
+        return x
+    elif x > addition:
+        return addition
+    else:
+        return addition
