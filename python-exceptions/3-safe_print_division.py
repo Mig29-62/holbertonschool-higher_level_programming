@@ -7,3 +7,4 @@ def safe_print_division(a, b):
         pass
     finally:
         print("{:.2f}".format(c))
+        return c
