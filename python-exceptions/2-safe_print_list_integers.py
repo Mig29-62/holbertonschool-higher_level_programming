@@ -21,3 +21,10 @@ def safe_print_list_integers(my_list=[], x=0):
                 i += 1
         else:
             return addition
+    except TypeError:
+        if i < addition-1:
+            while i < addition:
+                print("{:d}".format(my_list[i]),end='')
+                i += 1
+        else:
+            return addition
