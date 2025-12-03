@@ -6,7 +6,7 @@ def safe_print_list_integers(my_list=[], x=0):
             addition += 1
         else:
             pass
-    for element in my_list:
+    for i in range(0,x):
         try:
             print("{:d}".format(element),end='')
         except TypeError:
@@ -14,6 +14,7 @@ def safe_print_list_integers(my_list=[], x=0):
         except ValueError:
             pass
         except IndexError:
+            x=addition
             pass
     print('\n',end='')
     return addition
