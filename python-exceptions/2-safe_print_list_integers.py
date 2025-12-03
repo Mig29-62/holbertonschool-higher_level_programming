@@ -20,8 +20,8 @@ def safe_print_list_integers(my_list=[], x=0):
                 print("{:d}".format(my_list[i]),end='')
                 i += 1
         else:
+            print('\n', end='')
             return addition
-        print('\n', end='')
     except TypeError:
         if i < addition-1:
             while i < addition:
