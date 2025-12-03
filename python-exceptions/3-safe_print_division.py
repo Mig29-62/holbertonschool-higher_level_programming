@@ -6,4 +6,4 @@ def safe_print_division(a, b):
     except:
         pass
     finally:
-        print(c)
+        print("{:d}".format(c))
