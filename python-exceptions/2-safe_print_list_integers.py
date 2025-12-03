@@ -13,9 +13,11 @@ def safe_print_list_integers(my_list=[], x=0):
                 pass
             else:
                 print("{:d}".format(my_list[i]))
+            i += 1
     except IndexError:
         if i < addition-1:
             while i < addition:
                 print("{:d}".format(my_list[i]))
+                i += 1
         else:
             return addition
