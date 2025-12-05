@@ -35,6 +35,6 @@ class Rectangle:
         else:
             self.__height = value
     def area(self):
-        return self._area**2
+        return self.__area**2
     def perimeter(self):
-        return self._width*self._length
+        return self.__width*self.__length
