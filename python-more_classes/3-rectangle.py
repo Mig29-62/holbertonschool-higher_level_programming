@@ -49,4 +49,5 @@ class Rectangle:
         for i in range(0,self.__width):
             for j in range(0,self.__height):
                 string += '#'
+            string += '\n'
         return string
