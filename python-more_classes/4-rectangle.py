@@ -5,9 +5,6 @@
 class Rectangle:
     """a simple rectangle class"""
 
-    global string
-    string = ''
-
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -52,7 +49,8 @@ class Rectangle:
             return ''
         else:
             pass
-
+        global string
+        string = ''
         for i in range(0, self.__height):
             for j in range(0, self.__width):
                 string += '#'
@@ -63,5 +61,4 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        return eval(string)
-        pass
+        return eval(self.str)
