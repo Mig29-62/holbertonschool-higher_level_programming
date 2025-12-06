@@ -58,3 +58,6 @@ class Rectangle:
             else:
                 string += '\n'
         return string
+
+    def __repr__(self):
+        return eval(str)
