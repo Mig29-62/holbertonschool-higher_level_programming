@@ -49,7 +49,6 @@ class Rectangle:
             return ''
         else:
             pass
-        global string
         string = ''
         for i in range(0, self.__height):
             for j in range(0, self.__width):
@@ -61,4 +60,4 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        return eval(self.str)
+        return eval(str(self))
