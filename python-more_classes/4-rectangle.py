@@ -60,4 +60,4 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        return eval(self)
+        return eval(str(self))
