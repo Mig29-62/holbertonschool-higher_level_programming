@@ -92,4 +92,4 @@ class Rectangle:
 
     @classmethod
     def square(cls,size=0):
-        square=Rectangle(size,size)
+        my_square=Rectangle(size,size)
