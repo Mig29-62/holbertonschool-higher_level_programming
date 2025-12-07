@@ -6,8 +6,3 @@ def lookup(obj):
 
     """in this function we use dir function to return attributes of object"""
     return dir(obj)
-
-
-
-
-
