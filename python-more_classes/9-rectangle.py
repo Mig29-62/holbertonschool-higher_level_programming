@@ -91,5 +91,5 @@ class Rectangle:
             pass
 
     def square(cls,size=0):
-        self.__width == size
-        self.__height == size
+        cls.width == size
+        cls.height == size
