@@ -64,5 +64,4 @@ class Rectangle:
         eval(code)
         return code
     def __del__(self):
-        for i in range(0,3):
             print("Bye Rectangle...")
