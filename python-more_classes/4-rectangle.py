@@ -63,6 +63,3 @@ class Rectangle:
         code = f"Rectangle({self.__width}, {self.__height})"
         eval(code)
         return code
-    def __del__(self):
-        for i in range(0,3):
-            print("Bye Rectangle...")
