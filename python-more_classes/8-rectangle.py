@@ -89,3 +89,7 @@ class Rectangle:
             return rect_1
         else:
             pass
+
+    def square(cls,size=0):
+        self.width == size
+        self.height == size
