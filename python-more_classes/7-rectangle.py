@@ -71,3 +71,13 @@ class Rectangle:
     def __del__(self):
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+
+    def bigger_or_equal(rect_1, rect_2):
+        if rect_2 == Rectangle.rect_2:
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        elif rect_1 == Rectangle.rect_1:
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        else:
+            pass
+
+
