@@ -90,6 +90,7 @@ class Rectangle:
         else:
             pass
 
+    @classmethod
     def square(cls,size=0):
-        cls.__width == size
-        cls.__height == size
+        cls.width=size
+        cls.height=size
