@@ -91,5 +91,5 @@ class Rectangle:
             pass
 
     @classmethod
-    def square(cls,size=0):
-        my_square=Rectangle(size,size)
+    def square(cls, size=0):
+        return cls(size, size)
