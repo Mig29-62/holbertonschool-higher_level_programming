@@ -82,10 +82,10 @@ class Rectangle:
         area_1 = rect_1.__width * rect_2.__height
         area_2 = rect_2.__width * rect_2.__height
         if area_1 > area_2:
-            return area_1
-        elif area_1 > area_2:
-            return area_2
+            return rect_1
+        elif area_1 < area_2:
+            return rect_2
         elif area_1 == area_2:
-            return area_1
+            return rect_1
         else:
             pass
