@@ -6,12 +6,5 @@ class MyList(list):
 
     """class contains function which defines print function using sorted function"""
 
-    def __init__(self):
-        super().__init__()
-
     def print_sorted(self):
-        sorted_list=sorted(self)
-        return sorted_list
-
-    def __str__(self):
-        return str(list(self))
+        print([item for item in sorted(self)])
