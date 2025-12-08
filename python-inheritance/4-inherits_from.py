@@ -4,7 +4,7 @@
 def inherits_from(obj, a_class):
 
     """in this function we use issubclass function to determine hierarchy"""
-    if issubclass(type(obj),a_class):
+    if issubclass(type(obj),a_class) and not isinstance(obj,a_class):
         return True
     else:
         return False
