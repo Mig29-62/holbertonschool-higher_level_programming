@@ -1,5 +1,5 @@
 >>> MyList=__import__('1-my_list').MyList
 >>> my_list=MyList()
->>> my_list.extend([10,201,1,361])
+>>> my_list.extend([10,201,12,361])
 >>> my_list.print_sorted()
-[1, 10, 201, 361]
+[10, 12, 201, 361]
