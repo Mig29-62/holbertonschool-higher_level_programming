@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module contains the class which prints a list in sorted order."""
 
+
 class MyList(list):
 
     """Class that extends list and adds a method to print it sorted."""
