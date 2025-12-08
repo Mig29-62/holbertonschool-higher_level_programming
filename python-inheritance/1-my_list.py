@@ -9,4 +9,4 @@ class MyList(list):
         print(sorted(self))
 
     def __str__(self):
-        return list.__str__(self)
+        return "[" + ", ".join(str(x) for x in self) + "]"
