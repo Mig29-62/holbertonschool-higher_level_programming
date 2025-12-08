@@ -10,4 +10,4 @@ class MyList(list):
         print([item for item in sorted(self)])
 
     def __str__(self):
-        return str(list(self))
+        return list(self)
