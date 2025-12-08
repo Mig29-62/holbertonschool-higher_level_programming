@@ -11,3 +11,6 @@
 >>> my_list.append(-20)
 >>> my_list.print_sorted()
 [-20, 10, 12, 20, 201, 361]
+>>> my_list.clear()
+>>> my_list.print_sorted()
+[]
