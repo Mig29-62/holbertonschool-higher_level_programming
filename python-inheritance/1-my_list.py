@@ -2,7 +2,7 @@
 """module contains the class which prints list in a sorted order"""
 
 
-class Mylist(list):
+class MyList(list):
 
     """class contains function which defines print function using sorted function"""
 
