@@ -2,6 +2,8 @@
 """Module contains the class which prints a list in sorted order."""
 
 class MyList(list):
+
+
     """Class that extends list and adds a method to print it sorted."""
 
     def print_sorted(self):
