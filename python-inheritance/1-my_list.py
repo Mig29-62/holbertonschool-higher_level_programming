@@ -3,8 +3,8 @@
 
 
 class Mylist(list):
-    """class contains function which defines print function using sorted function"""
 
+    """class contains function which defines print function using sorted function"""
 
     def print_sorted(self):
         sorted(list)
