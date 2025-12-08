@@ -4,9 +4,9 @@
 
 def is_same_class(obj, a_class):
 
-    """in this function we use isinstance to detect if the object is an instance of class"""
+    """in this function we use isinstance to detect class"""
 
-    if isinstance(obj,a_class) and type(obj) == a_class:  # noqa: E721
+    if isinstance(obj, a_class) and type(obj) == a_class:  # noqa: E721
         return True
     else:
         return False
