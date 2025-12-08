@@ -6,9 +6,7 @@ def is_same_class(obj, a_class):
 
     """in this function we use isinstance to detect if the object is an instance of class"""
 
-    if isinstance(obj,a_class):
+    if isinstance(obj,a_class) and not issubclass(obj,a_class):
         return True
-    elif not isinstance(obj,a_class):
-        return False
     else:
-        pass
+        return False
