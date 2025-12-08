@@ -14,4 +14,4 @@ class MyList(list):
         print(sorted_list)
 
     def __str__(self):
-        return str(list(self))
+        return "[" + ", ".join(str(i) for i in self) + "]"
