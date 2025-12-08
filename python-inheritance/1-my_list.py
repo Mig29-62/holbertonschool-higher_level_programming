@@ -7,7 +7,7 @@ class MyList(list):
     """class contains function which defines print function using sorted function"""
 
     def __init__(self):
-        super().__init__(self)
+        super().__init__()
 
     def print_sorted(self):
         sorted_list=sorted(self)
