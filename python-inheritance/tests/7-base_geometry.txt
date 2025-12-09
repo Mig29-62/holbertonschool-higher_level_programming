@@ -1,4 +1,6 @@
 >>> BaseGeometry=__import__('7-base_geometry').BaseGeometry
 >>> base=BaseGeometry()
 >>> base.integer_validator("John","Haci")
-TypeError: John must be an integer
+File "/home/student_jail/student_repo/python-inheritance/7-base_geometry.py", line 14, in integer_validator
+        raise TypeError(f"{name} must be an integer")
+    TypeError: John must be an integer
