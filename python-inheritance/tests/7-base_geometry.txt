@@ -1,10 +1,4 @@
 >>> BaseGeometry=__import__('7-base_geometry').BaseGeometry
 >>> base=BaseGeometry()
 >>> base.integer_validator("John","Haci")
-Traceback (most recent call last):
-          File "/usr/lib/python3.9/doctest.py", line 1336, in __run
-            exec(compile(example.source, filename, "single",
-          File "", line 1, in
-            base.integer_validator("John","Haci")
-    File "", line 1, in
-    TypeError: John must be an integer
+TypeError: John must be an integer
