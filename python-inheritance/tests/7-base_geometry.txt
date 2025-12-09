@@ -1,7 +1,6 @@
 >>> BaseGeometry=__import__('7-base_geometry').BaseGeometry
 >>> base=BaseGeometry()
 >>> base.integer_validator("John","Haci")
-Exception raised:
 base.integer_validator("John","Haci")
 Exception raised:
     Traceback (most recent call last):
