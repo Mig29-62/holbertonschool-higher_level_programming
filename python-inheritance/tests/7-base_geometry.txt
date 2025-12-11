@@ -24,3 +24,7 @@ TypeError: John must be an integer
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> x.integer_validator("John",0)
+Traceback (most recent call last):
+...
+ValueError: John must be greater than 0
