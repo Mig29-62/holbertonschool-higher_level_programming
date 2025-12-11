@@ -20,3 +20,4 @@ ValueError: John must be greater than 0
 Traceback (most recent call last):
 ...
 TypeError: John must be an integer
+>>> x.integer_validator()
