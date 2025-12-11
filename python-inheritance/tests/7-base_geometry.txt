@@ -16,3 +16,11 @@ Traceback (most recent call last):
 ...
 ValueError: John must be greater than 0
 >>> x.integer_validator("John",12)
+>>> x.integer_validator("John",True)
+Traceback (most recent call last):
+...
+TypeError: John must be an integer
+>>> x.integer_validator("John",2.21)
+Traceback (most recent call last):
+...
+TypeError: John must be an integer
