@@ -1,5 +1,5 @@
 >>> BaseGeometry=__import__('7-base_geometry').BaseGeometry
 >>> base=BaseGeometry()
 >>> if hasattr(base,BaseGeometry):
->>> print("Salam")
+>>>     print("Salam")
 Salam
