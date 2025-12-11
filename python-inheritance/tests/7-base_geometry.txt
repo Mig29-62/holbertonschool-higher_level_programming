@@ -1,5 +1,5 @@
 >>> BaseGeometry=__import__('7-base_geometry').BaseGeometry
 >>> base=BaseGeometry()
->>> m=__import('7-base.geometry').__doc__
+>>> m = __import("7-base.geometry").__doc__
 >>> print(m)
 the module which defines base geometry class
