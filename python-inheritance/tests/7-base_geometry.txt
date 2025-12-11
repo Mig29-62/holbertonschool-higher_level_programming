@@ -7,3 +7,7 @@ True
 Traceback (most recent call last):
 ...
 Exception: area() is not implemented
+>>> x.integer_validator("John","salam")
+Traceback (most recent call last):
+...
+TypeError: John must be an integer
