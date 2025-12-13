@@ -3,4 +3,4 @@
 def write_file(filename='',text=''):
     """we write to file using write method"""
     with open(filename,'w') as f:
-        f.write(text)
+        return f.write(text)
