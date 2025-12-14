@@ -8,5 +8,4 @@ def save_to_json_file(my_obj,filename):
     """we use loads and open method"""
 
     with open(filename, 'w') as f:
-        a = json.load(my_obj)
-        f.write(a)
+        f.write(my_obj)
