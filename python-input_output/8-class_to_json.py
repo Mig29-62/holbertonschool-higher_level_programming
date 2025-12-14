@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """we define object to json"""
-import json
+
 def class_to_json(obj):
-
-    """we use dumps method"""
-
-    return json.dumps(obj)
+    dictionary={}
+    for key,value in obj.__doc__.items():
+        dictionary[key]=value
+    return dictionary
