@@ -2,4 +2,4 @@
 """we define object to json"""
 
 def class_to_json(obj):
-    print(obj.__dict__)
+    return obj.__dict__
