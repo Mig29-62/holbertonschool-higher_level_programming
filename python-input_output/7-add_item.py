@@ -3,5 +3,5 @@
 save=__import__('5-save_to_json_file').save_to_json_file
 load=__import__('6-load_from_json_file').load_from_json_file
 import sys
-l=list(sys.argv)
+l=list(sys.argv[0:])
 save(l,'add_item.json')
