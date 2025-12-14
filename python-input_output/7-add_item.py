@@ -6,7 +6,7 @@ import sys
 l=list(sys.argv[1:])
 try:
     list2=load('add_item.json')
-    l= l+list2
+    l.extend(list2)
 except:
     pass
 save(l,'add_item.json')
