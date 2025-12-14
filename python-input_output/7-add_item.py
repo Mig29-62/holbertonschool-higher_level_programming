@@ -3,8 +3,9 @@
 save=__import__('5-save_to_json_file').save_to_json_file
 load=__import__('6-load_from_json_file').load_from_json_file
 import sys
+l=[]
 try:
-    l=list(load('add_item.json'))
+    l.append(list(load('add_item.json')))
 except FileNotFoundError:
     pass
 l.append(list(sys.argv[1:]))
