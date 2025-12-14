@@ -7,6 +7,6 @@ def save_to_json_file(my_obj,filename):
 
     """we use loads and open method"""
 
-    a = json.loads(my_obj)
+    a = json.load(my_obj)
     with open(filename,'w') as f:
         f.write(a)
