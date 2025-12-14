@@ -3,9 +3,9 @@
 import json
 
 
-def save_to_json_file(my_obj,filename):
+def save_to_json_file(my_obj, filename):
 
     """we use loads and open method"""
 
     with open(filename, 'w') as f:
-        json.dump(my_obj,f)
+        json.dump(my_obj, f)
