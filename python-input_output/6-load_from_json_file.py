@@ -7,6 +7,6 @@ def load_from_json_file(filename):
 
     """we use load method to convert to object"""
 
-    with open(filename,'r') as f:
-        data=json.load(f)
+    with open(filename, 'r') as f:
+        data = json.load(f)
         return data
