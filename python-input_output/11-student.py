@@ -28,6 +28,7 @@ class Student:
                     pass
                 i += 1
         return dictionary
-    def reload_from_json(self,json):
-        for key,value in json.items():
-            self.__dict__[key]=json[key]
+
+    def reload_from_json(self, json):
+        for key, value in json.items():
+            self.__dict__[key] = json[key]
