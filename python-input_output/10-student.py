@@ -16,7 +16,7 @@ class Student:
         empty = {}
         if not attrs:
             return self.__dict__
-        elif attrs=[]:
+        elif attrs==[]:
             return None
         else:
             length=len(attrs)
