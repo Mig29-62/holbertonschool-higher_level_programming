@@ -13,10 +13,11 @@ class Student:
 
     def to_json(self, attrs=None):
         dictionary={}
+        empty = {}
         if not attrs:
             return self.__dict__
         elif len(attrs)==0:
-            return dictionary
+            return empty
         else:
             length=len(attrs)
             i=0
