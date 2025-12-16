@@ -23,4 +23,5 @@ class Student:
                     dictionary[attrs[i]]=self.__dict__[attrs[i]]
                 else:
                     pass
+                i += 1
         return dictionary
