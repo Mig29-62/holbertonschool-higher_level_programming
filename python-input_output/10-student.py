@@ -12,19 +12,18 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        dictionary={}
-        empty = {}
+        dictionary = {}
         if not attrs:
-            if attrs==[]:
+            if attrs == []:
                 return dictionary
             else:
                 return self.__dict__
         else:
-            length=len(attrs)
-            i=0
-            while i<length:
+            length = len(attrs)
+            i = 0
+            while i < length:
                 if attrs[i] in self.__dict__.keys():
-                    dictionary[attrs[i]]=self.__dict__[attrs[i]]
+                    dictionary[attrs[i]] = self.__dict__[attrs[i]]
                 else:
                     pass
                 i += 1
