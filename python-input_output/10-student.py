@@ -16,7 +16,7 @@ class Student:
         if not attrs:
             return self.__dict__
         elif len(attrs)==0:
-            return self.__dict__
+            return 0
         else:
             length=len(attrs)
             i=0
