@@ -13,7 +13,7 @@ class Student:
 
     def to_json(self, attrs=None):
         dictionary={}
-        if attrs:
+        if not attrs:
             return self.__dict__
         else:
             length=len(attrs)
