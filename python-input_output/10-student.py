@@ -15,9 +15,10 @@ class Student:
         dictionary={}
         empty = {}
         if not attrs:
-            return self.__dict__
-        elif attrs==[]:
-            return None
+            if attrs==[]:
+                return dictionary
+            else:
+                return self.__dict__
         else:
             length=len(attrs)
             i=0
