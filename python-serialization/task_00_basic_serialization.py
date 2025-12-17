@@ -7,8 +7,8 @@ def serialize_and_save_to_file(data,filename):
     try:
         with open(filename,"wb") as file:
             pickle.dump(data,file)
-    except TypeError:
-        pass
+    except AttributeError:
+        raise TypeError
 
 def load_and_deserialize(filename):
     with open (filename,"rb") as file:
