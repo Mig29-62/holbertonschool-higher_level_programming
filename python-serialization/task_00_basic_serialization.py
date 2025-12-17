@@ -9,5 +9,5 @@ def serialize_and_save_to_file(data,filename):
 
 def load_and_deserialize(filename):
     with open (filename,"rb") as file:
-        new_data=pickle.load(filename)
+        new_data=pickle.load(file)
         return new_data
