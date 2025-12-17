@@ -4,8 +4,11 @@ import pickle
 
 
 def serialize_and_save_to_file(data,filename):
-    with open(filename,"wb") as file:
-        pickle.dump(data,file)
+    try:
+        with open(filename,"wb") as file:
+            pickle.dump(data,file)
+    except AttributeError:
+        pass
 
 def load_and_deserialize(filename):
     with open (filename,"rb") as file:
