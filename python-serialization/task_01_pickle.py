@@ -23,6 +23,9 @@ class CustomObject:
 
     @classmethod
     def deserialize(cls, filename):
-        with open(filename,'rb') as f:
-            ClassObject=pickle.load(f)
+        try:
+            with open(filename,'rb') as f:
+                ClassObject=pickle.load(f)
+        except EOFError:
+            return None
         return ClassObject
