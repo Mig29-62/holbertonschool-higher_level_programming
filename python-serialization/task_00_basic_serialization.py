@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+"""we define serialize and deserialize functions"""
+import pickle
+
+
+def serialize_and_save_to_file(data,filename):
+    with open(filename,"wb") as file:
+        pickle.dump(data,file)
+
+def load_and_deserialize(filename):
+    with open (filename,"rb") as file:
+        pickle.load(filename)
