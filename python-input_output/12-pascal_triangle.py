@@ -1,4 +1,11 @@
+#!/usr/bin/python3
+"""we define pascal triangle function"""
+
+
 def pascal_triangle(n):
+
+    """........"""
+
     triangle = []
 
     for i in range(n):
