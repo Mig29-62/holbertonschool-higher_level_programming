@@ -10,3 +10,7 @@ def serialize_to_xml(dictionary, filename):
             child=ET.SubElement(elem,key)
             child.text=str(value)
     return elem
+
+def deserialize_from_xml(filename):
+    root=ET.parse(filename)
+    return root
