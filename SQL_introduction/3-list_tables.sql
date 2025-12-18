@@ -1,2 +1,2 @@
 -- we use show command to list all tables
-SHOW TABLE;
+SHOW TABLES;
