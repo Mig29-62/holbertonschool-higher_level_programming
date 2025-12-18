@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 import xml.etree.ElementTree as ET
 def serialize_to_xml(dictionary, filename):
+    elem=ET.Element("data")
     for key,value in dictionary.items():
-        elem=ET.Element("data")
+
         if isinstance(value,dict):
             child=serialize_to_xml(key,value)
             elem.append(child)
@@ -14,4 +15,4 @@ def serialize_to_xml(dictionary, filename):
 
 def deserialize_from_xml(filename):
     root=ET.parse(filename)
-    return root
+    return root.getroot()
