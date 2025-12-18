@@ -15,4 +15,5 @@ def serialize_to_xml(dictionary, filename):
 
 def deserialize_from_xml(filename):
     root=ET.parse(filename)
-    return root.getroot()
+    root=root.getroot()
+    return {child.tag:child.text for child in root}
