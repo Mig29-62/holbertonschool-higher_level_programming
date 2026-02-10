@@ -1,5 +1,5 @@
--- we use CREATE TABLE to create the table and also add elements.COMMENT is used to add comment specified by per Holberton task rules.
-CREATE TABLE IF NOT EXISTS force_name(
+-- we use CREATE TABLE to create the table and also add elements.DEFAULT is used to put default id value as a condition by holberton task rules.
+CREATE TABLE IF NOT EXISTS id_not_null(
 	id INT DEFAULT 1,
 	name VARCHAR(256) NOT NULL
 	);
