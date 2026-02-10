@@ -2,6 +2,6 @@
 SELECT score,name
 FROM second_table
 WHERE name != NULL
-GROUP BY name
+GROUP BY name,score
 ORDER BY score DESC;
 
