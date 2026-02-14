@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""we use urllib to get request from specific links"""
+"""we use urllib Request to send POST request"""
 import urllib.request
 import sys
 if __name__ == "__main__":
     url = sys.argv[1]
     email="isayevbooks360@gmail.com"
     data={'email':email}
-    req = urllib.request.Request(url)
+    req = urllib.request.Request(url,data)
     with urllib.request.urlopen(req) as response:
         print(response.read())
