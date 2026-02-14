@@ -5,6 +5,7 @@ import sys
 if __name__ == "__main__":
     url = sys.argv[1]
     email="isayevbooks360@gmail.com"
+    email=email.encode('utf-8')
     data={'email':email}
     req = urllib.request.Request(url,data)
     with urllib.request.urlopen(req) as response:
