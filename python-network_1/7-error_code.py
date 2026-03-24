@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/python3
 """
 This script takes a URL as a command-line argument, sends a request to the URL,
 and displays the body of the response. If the HTTP status code is greater than
