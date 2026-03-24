@@ -13,7 +13,6 @@ if __name__ == "__main__":
             response = requests.get(url)
             # .get() returns None if the key doesn't exist
             request_id = response.headers.get('X-Request-Id')
-            
             if request_id:
                 print(request_id)
         except requests.exceptions.RequestException as e:
