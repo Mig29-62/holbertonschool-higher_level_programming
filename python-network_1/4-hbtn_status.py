@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import requests
-
+"""we use this module to fetch type and content"""
 if __name__ == "__main__":
     url = "https://intranet.hbtn.io/status"
     response = requests.get(url)
