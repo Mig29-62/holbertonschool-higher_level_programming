@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 import requests
-"""we use this module to fetch type and content"""
+
+"""we use this module to fetch type and content
+   and we use print function to output all needed
+   information accordingly"""
+
 if __name__ == "__main__":
     url = "https://intranet.hbtn.io/status"
     response = requests.get(url)
