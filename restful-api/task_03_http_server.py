@@ -31,11 +31,10 @@ class SimpleHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            self.wfile.write(b"404 Not Found")
+            self.wfile.write(b"Not Found")
 
 if __name__ == "__main__":
     with socketserver.TCPServer(("", PORT), SimpleHandler) as httpd:
-        print(f"Serving at http://localhost:{PORT}")
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
