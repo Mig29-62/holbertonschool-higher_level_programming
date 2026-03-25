@@ -34,8 +34,8 @@ class SimpleHandler(http.server.BaseHTTPRequestHandler):
             self.wfile.write(b"Not Found")
 
 if __name__ == "__main__":
-    with socketserver.TCPServer(("", PORT), SimpleHandler) as httpd:
-        try:
-            httpd.serve_forever()
-        except KeyboardInterrupt:
-            httpd.server_close()
+    httpd = socketserver.TCPServer(("", PORT), SimpleHandler)
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        httpd.server_close()
