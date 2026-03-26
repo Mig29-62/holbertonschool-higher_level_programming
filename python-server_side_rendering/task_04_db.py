@@ -1,5 +1,6 @@
 import sqlite3
 import json
+import csv
 from flask import Flask, render_template, request
 app=Flask(__name__)
 def get_db_connection():
@@ -7,7 +8,7 @@ def get_db_connection():
         conn=sqlite3.connect('products.db')
         conn.row_factory=sqlite3.Row
         return conn
-    except sqlite3.Error as e:
+    except sqlite3.Error:
         return None
 @app.route('/products')
 def display_products():
@@ -20,14 +21,21 @@ def display_products():
         try:
             products=conn.execute('SELECT * FROM Products').fetchall()
             conn.close()
-        except sqlite3.Error as e:
-            return f"Database query error: {e}",500
+        except sqlite3.Error:
+            return "Database query error",500
     elif source=='json':
         try:
             with open('products.json','r') as f:
                 products=json.load(f)
-        except (FileNotFoundError,json.JSONDecodeError):
+        except:
             return "JSON file error",500
+    elif source=='csv':
+        try:
+            with open('products.csv','r') as f:
+                reader=csv.DictReader(f)
+                products=[row for row in reader]
+        except:
+            return "CSV file error",500
     elif source=='list':
         products=[
             {'id':1,'name':'Laptop','price':799.99,'category':'Electronics'},
