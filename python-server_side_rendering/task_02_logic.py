@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import json
 from flask import Flask,render_template
+app=Flask(__name__)
 @app.route('/items')
 def items_list():
     with open('items.json', 'r') as f:
