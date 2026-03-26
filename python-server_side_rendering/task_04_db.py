@@ -13,30 +13,39 @@ def get_db_connection():
 @app.route('/products')
 def display_products():
     source=request.args.get('source')
+    product_id=request.args.get('id')
     products=[]
     if source=='sql':
         conn=get_db_connection()
         if conn is None:
-            return "Database connection failed",200
+            return render_template('product_display.html',error="Database connection failed"),200
         try:
-            products=conn.execute('SELECT * FROM Products').fetchall()
+            if product_id:
+                products=conn.execute('SELECT * FROM Products WHERE id = ?',(product_id,)).fetchall()
+                if not products:
+                    return render_template('product_display.html',error="Product not found"),200
+            else:
+                products=conn.execute('SELECT * FROM Products').fetchall()
             conn.close()
         except sqlite3.Error:
-            return "Database query error",200
+            return render_template('product_display.html',error="Database error"),200
     elif source=='json':
         try:
             with open('products.json','r') as f:
-                products=json.load(f)
+                data=json.load(f)
+                products=[p for p in data if not product_id or str(p.get('id'))==str(product_id)]
         except:
             products=[]
     elif source=='csv':
         try:
             with open('products.csv','r') as f:
-                products=list(csv.DictReader(f))
+                data=list(csv.DictReader(f))
+                products=[p for p in data if not product_id or str(p.get('id'))==str(product_id)]
         except:
             products=[]
     elif source=='list':
-        products=[{'id':1,'name':'Laptop','price':799.99,'category':'Electronics'}]
+        data=[{'id':1,'name':'Laptop','price':799.99,'category':'Electronics'}]
+        products=[p for p in data if not product_id or str(p.get('id'))==str(product_id)]
     else:
         return render_template('product_display.html',error="Wrong source"),200
     return render_template('product_display.html',products=products)
